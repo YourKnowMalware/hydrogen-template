@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YIEEEEE!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-size: 50px;
+            color: #FF5733; /* Bright color */
+            position: relative;
+        }
+        button {
+            font-size: 30px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function moveButton(button) {
+            const x = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth));
+            const y = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight));
+            button.style.position = 'absolute';
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+
+        function redirectToPage() {
+            window.location.href = "love.html"; // Redirects to love.html page
+        }
+    </script>
+</head>
+<body>
+    <div>Crush moko nohhh!? -Vanze</div>
+    <button onclick="moveButton(this)">Maybe</button>
+    <button onclick="moveButton(this)">No</button>
+    <button onclick="redirectToPage()">Yes</button>
+
+    <!-- You can create a separate file named 'love.html' as follows -->
+    <!-- love.html should contain the following code -->
+    <!--
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Love Page</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-size: 50px;
+                color: #FF5733; /* Bright color */
+            }
+        </style>
+    </head>
+    <body>
+        <div>YIEEEEE LOVE YOU!</div>
+    </body>
+    </html>
+    -->
+</body>
+</html>
